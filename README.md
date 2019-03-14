@@ -1,5 +1,5 @@
 Copyright (c) 2019 Washington University 
-Created by: Anish Mitra, Aaron Tanenbaum & Ryan Raut
+Code written by: Anish Mitra, Aaron Tanenbaum & Ryan Raut
 
 DISCLAIMER:
 Washington University hereby grants to you a non-transferable, non-exclusive, royalty-free, 
@@ -27,13 +27,5 @@ create_blocks.m -- uses a temporal mask (e.g., indicating low-motion frames that
 lagged_cov.m -- creates multivariate empirical cross-covariance functions (i.e., in units of the sampling interval)
 parabolic_interp.m -- performs parabolic interpolation to estimate the true peak of cross-covariance functions, and the corresponding time shift in seconds
 
-surrogate_TD.m is a script that can be used to generate surrogate pairs of time series that match the spectral characteristics of fMRI series, with zero-lag correlation and time delay, among other parameters, specified by the user. This function is useful for examining the dependency of time delay estimation error on data quantity and correlation magnitude (and likewise, estimating the error associated with an empirical time delay given a certain data quantity and correlation magnitude)
-
-Relevant papers for lag analysis:
-Mitra et al. (2014) J Neurophys:
-Mitra et al. (2015) PNAS:
-Mitra et al. (2015) Cereb Cortex:
-Mitra et al. (2015) eLife:
-Mitra et al. (2016) PNAS:
-Mitra et al. (2018) PLOS:
-Mitra et al. (2018) Neuron:
+surrogate_TDE.m is a script that can be used to generate surrogate pairs of time series that match the spectral characteristics of fMRI series, with zero-lag correlation and time delay, among other parameters, specified by the user. This function is useful for examining the dependency of time delay estimation error on data quantity and correlation magnitude (and likewise, estimating the error associated with an empirical time delay given a certain data quantity and correlation magnitude.
+- surrogate_TDE.m uses an external function, f_alpha_gaussian.m (available at https://people.sc.fsu.edu/~jburkardt/m_src/cnoise/f_alpha_gaussian.m) to simulate BOLD spectral content
