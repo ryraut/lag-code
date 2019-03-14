@@ -1,8 +1,8 @@
-Copyright (c) 2019 Washington University 
+Copyright (c) 2019 Washington University  
 Code written by: Anish Mitra, Aaron Tanenbaum & Ryan Raut
 
 DISCLAIMER:
-Washington University hereby grants to you a non-transferable, non-exclusive, royalty-free, 
+Washington University hereby grants to you a non-transferable, non-exclusive, royalty-free,
 non-commercial, research license to use and copy the computer code that may be downloaded within 
 this site (the "Software").  You agree to include this license and the above copyright notice in 
 all copies of the Software.  The Software may not be distributed, shared, or transferred to any third party.  
