@@ -20,7 +20,7 @@ ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE SOFTWARE, THE USE OF THE SOFTWAR
 WHETHER IN BREACH OF CONTRACT, TORT OR OTHERWISE, EVEN IF SUCH PARTY IS ADVISED OF THE POSSIBILITY OF SUCH 
 DAMAGES. 
 
-**===========================================================**
+**===========================================================**   
 **NOTES:**
 **The main script for lag analysis is tdmx_template.m**, which uses a time series matrix to create a corresponding time delay matrix. The script calls the following supporting functions (which should not require customization):  
 **create_blocks.m** -- uses a temporal mask (e.g., indicating low-motion frames that should be included) of the time series to generate blocks of contiguous frames that meet the desired minimum block duration  
