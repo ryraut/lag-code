@@ -1,4 +1,4 @@
-**Code for computing lag analyses following procedure described in:**
+**Code for computing lag analyses following procedure described in:** \
 Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-state fMRI." Neuroimage 194 (2019): 211-227.
 
 **tdmx_template.m** -- The main script for performing lag analysis. Takes an input time series matrix and creates a pairwise time delay matrix. The script calls the following supporting functions (which should not require customization):
