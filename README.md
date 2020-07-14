@@ -9,7 +9,7 @@ Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-st
 **surrogate_TDE.m** is a function that can be used to generate surrogate pairs of time series that match the spectral characteristics of fMRI series, with zero-lag correlation and time delay, among other parameters, specified by the user. This function is useful for examining the dependency of time delay estimation error on data quantity and correlation magnitude (and likewise, estimating the error associated with an empirical time delay given a certain data quantity and correlation magnitude.
 - surrogate_TDE.m uses an external function, f_alpha_gaussian.m (https://people.sc.fsu.edu/~jburkardt/m_src/cnoise/f_alpha_gaussian.m) to simulate BOLD spectral content
 
-**Relevant citations:**
+**Relevant citations:** \
 Mitra, Anish, et al. "Lag structure in resting-state fMRI." Journal of Neurophysiology 111.11 (2014): 2374-2391. \
 Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-state fMRI." Neuroimage 194 (2019): 211-227.
 
