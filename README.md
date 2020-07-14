@@ -10,10 +10,11 @@ Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-st
 - surrogate_TDE.m uses an external function, f_alpha_gaussian.m (https://people.sc.fsu.edu/~jburkardt/m_src/cnoise/f_alpha_gaussian.m) to simulate BOLD spectral content
 
 **Relevant citations:**
-Mitra, Anish, et al. "Lag structure in resting-state fMRI." Journal of neurophysiology 111.11 (2014): 2374-2391.
+Mitra, Anish, et al. "Lag structure in resting-state fMRI." Journal of Neurophysiology 111.11 (2014): 2374-2391.
 Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-state fMRI." Neuroimage 194 (2019): 211-227.
 
-===
+=================
+
 **spectral_template.m** -- The main script for performing spectral analysis. Takes an input time series matrix and creates a Nx1 vector of "intrinsic timescales" for the N time series. The script calls the above functions "create_blocks.m" and "lagged_cov.m", as well as:      
 **acf_hwhm.m** -- estimates intrinsic timescale for each time series, computed as half of the full-width-at-half-maximum of the autocorrelation function after spline fitting
 
