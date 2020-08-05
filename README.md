@@ -14,6 +14,8 @@ Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-st
 
 =================
 
+**Code for computing spectral analyses as in Raut et al. (2020) PNAS** 
+
 **spectral_template.m** -- The main script for performing spectral analysis. Takes an input time series matrix and creates a Nx1 vector of "intrinsic timescales" for the N time series. The script calls the above functions "create_blocks.m" and "lagged_cov.m", as well as:      
 **acf_hwhm.m** -- estimates intrinsic timescale for each time series, computed as half of the full-width-at-half-maximum of the autocorrelation function after spline fitting
 
