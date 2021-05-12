@@ -23,4 +23,4 @@ Raut, Ryan V., et al. "On time delay estimation and sampling error in resting-st
 Raut, Ryan V., et al. "Hierarchical dynamics as a macroscopic organizing principle of the human brain." Proceedings of the National Academy of Sciences (in press).
 
 
-**Questions may be directed to ryanvraut@gmail.com**
+**Please direct questions to ryanvraut@gmail.com**
