@@ -38,9 +38,9 @@ for s = 1:numel(subjects)
     
     
     BOLD = importdata(''); % read in time series matrix
-    good = importdata(''); % read in spatial mask if desired
+    good = importdata(''); % read in spatial mask if desired; MAKE SURE THIS IS A LOGICAL!
     
-    % read in temporal mask/motion time series (e.g., FD or DVARS)
+    % read in temporal mask/motion time series (e.g., FD or DVARS); MAKE SURE THIS IS A LOGICAL!
     format = dlmread('') <= motion_thresh;
     
     % ignore pre-steady-state frames
