@@ -1,9 +1,16 @@
 %% Main lag script used to compute time delay matrix and lag projection
 %
+%% General information for a few variables and their expected file types
+%
+%  subjects:  various compatible file formats; read as string array
+%  BOLD:    .mat file; Time x Space (where the spatial dimension corresponds to a vector of spatial units...in other words, BOLD is a 2D matrix, where spatial units are vectorized)
+%  good:    .mat file; Vector with length = number of spatial units; used to mask out bad spatial units
+%  format:  various compatible file formats (e.g., text file); vector with length = number of time points; used to mask out bad time points
+%%%%%%%%
 %
 %% Setup
 % Set parameters
-num_nodes = 264;    % number of time series 
+num_nodes = 264;    % number of time series (i.e., spatial dimension)
 outdir = '';    % set directory for saving out images here
 mkdir(outdir)
 lag_lim = 4;    % lag limit (in seconds)
@@ -11,7 +18,7 @@ lags = -3:3;    % range of TR shifts; max(lags) = round(lag_lim/tr + 1)
 
 % Specify data parameters
 subjects = importdata('');
-tr = 2;
+tr = 2; % sampling interval in seconds
 motion_thresh = .2;    % important: must match motion criteria used during preproc
 
 min_block_durn = (max(lags)+1)*tr;   % min. block duration (in seconds)
